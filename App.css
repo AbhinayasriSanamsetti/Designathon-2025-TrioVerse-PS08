@@ -1,0 +1,160 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+/* Main Box - Increased Width */
+.container {
+  background: #121212;
+  max-width: 650px; /* Increased from 550px */
+  width: 100%;
+  margin: 30px auto;
+  padding: 40px; /* Increased padding */
+  border-radius: 14px;
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.1);
+  border: 1px solid #2a2a40;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+/* Header */
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00d4ff;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  font-weight: 500;
+  color: #dddddd;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Text Input - Adjusted Width */
+textarea {
+  width: 100%;
+  min-height: 140px;
+  border: 1px solid #2a2a40;
+  background: #1a1a2e;
+  color: white;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 1rem;
+  resize: none;
+  transition: border 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #00d4ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.3);
+}
+
+/* File Input */
+input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #2a2a40;
+  background: #1a1a2e;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+input[type="file"]:hover {
+  border-color: #00d4ff;
+}
+
+/* Button - Adjusted Padding */
+button {
+  width: 100%;
+  background: linear-gradient(135deg, #0084ff, #00d4ff);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 14px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #006bb3, #00a6d6);
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background: #555;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Result Box */
+.result-box {
+  margin-top: 25px;
+  padding: 18px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Fake News Styling */
+.result-fake {
+  background: #571818;
+  color: #e74c3c;
+  border: 1px solid #c0392b;
+  box-shadow: 0px 4px 10px rgba(192, 57, 43, 0.3);
+}
+
+/* Real News Styling */
+.result-real {
+  background: #153c25;
+  color: #2ecc71;
+  border: 1px solid #27ae60;
+  box-shadow: 0px 4px 10px rgba(46, 204, 113, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .container {
+    max-width: 90%;
+    padding: 25px;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+}
